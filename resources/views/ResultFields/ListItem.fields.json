@@ -65,5 +65,6 @@
     "unit.content",
     "unit.names.name",
     "unit.names.lang",
-    "unit.unitOfMeasurement"
+    "unit.unitOfMeasurement",
+    "stock.*"
 ]

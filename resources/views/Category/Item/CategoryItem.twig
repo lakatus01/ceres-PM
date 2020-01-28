@@ -127,6 +127,9 @@
                                             <i class="fa fa-image"></i>
                                             <span>{{ item.data | itemName }}</span>
                                         </a>
+                                        <div v-if="$store.getters.currentItemVariation.stock">
+                                            In stock: ${ currentVariation.stock.net }
+                                        </div>
                                     </category-item>
                                 </li>
                             {% endfor %}
