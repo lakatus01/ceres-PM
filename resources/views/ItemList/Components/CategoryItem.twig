@@ -59,6 +59,9 @@
                     </a>
                     <div class="thumb-meta">
                         <slot name="before-prices"></slot>
+                        <div v-if="store.getters.currentItemVariation.stock">
+                            In stock: ${ currentVariation.stock.net }
+                        </div>
 
                         <div class="prices">
                             <div v-if="item.prices.rrp && item.prices.rrp.price.value > 0 && item.prices.rrp.price.value > item.prices.default.unitPrice.value" class="price-view-port">
