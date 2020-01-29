@@ -127,10 +127,11 @@
                                             <i class="fa fa-image"></i>
                                             <span>{{ item.data | itemName }}</span>
                                         </a>
-                                        <div>
-                                            In stock: {{ item.data.stock.net }}
-                                        </div>
+
+
+
                                     </category-item>
+                                    <p> In stock: {{ item.data.stock.net }} </p>
                                 </li>
                             {% endfor %}
                         </ul>
